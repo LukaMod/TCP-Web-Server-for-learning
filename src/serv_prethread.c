@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
     else if (argc == 4)
         listenfd = tcp_listen(argv[1], argv[2], &addrlen);
     else
-        err_quit("usage: ser_thread [ <host> ] <port#> <#threads>");
+        err_quit("usage: serv_prethread [ <host> ] <port#> <#threads>");
     
     nthreads = atoi(argv[argc - 1]);
     tptr = Calloc(nthreads, sizeof(thread));

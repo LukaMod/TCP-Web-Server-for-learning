@@ -38,7 +38,7 @@ int main(int argc, char** argv) {
     } else if (argc == 3)
         listenfd = tcp_listen(argv[1], argv[2], NULL);
     else
-        err_quit("Usage: server <service or port>");
+        err_quit("Usage: server [ <host> ] <port>");
 
     kqueuefd = Kqueue();
 
