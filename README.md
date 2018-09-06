@@ -50,5 +50,5 @@ $ serv_prethread [ <host> ] <port> <threads>
 
 `client`:
 ```shell
-$ client <hostname or IPaddress> <port> <#children> <#loops/child> <#bytes/request>
+$ client <hostname or IPaddress> <port> <children> <loops/child> <bytes/request>
 ```
